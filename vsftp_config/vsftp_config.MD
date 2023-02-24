@@ -70,32 +70,41 @@ sudo chown root /etc/vsftpd/vsftpd.conf
 ## or
 sudo /sbin/service vsftpd restart
 
-
+```bash
 Checking Ftp Connections:
 Lcoal test
 ftp ftpuser:password@localhost
 remote test
 ftp ftpuser:password@x.x.x.x
+```
 
 ## How to Change Vsftpd Default port
 
 # /etc/vsftp/vsftpd.conf
+```bash
 listen_port=A
 ftp_data_port=B
+```
 
-# For example if you want the vsftpd service to run on ports 2020 and 2121 respectively, add below lines to the configuration file /etc/vsftp/vsftpd.conf.
+**For example if you want the vsftpd service to run on ports 2020 and 2121 respectively, add below lines to the configuration file /etc/vsftp/vsftpd.conf.
 
 # example
+```bash
 Here,
 A – listening port.
 B – data originate port.
+```bash
 
 # /etc/vsftp/vsftpd.conf
+```bash
 listen_port=2020
 ftp_data_port=2121
+```bash
 
 # Now restart the vsftpd service
+```bash
 sudo /sbin/service vsftpd restart
+```
 
 # original post url
 https://www.thegeekdiary.com/centos-rhel-how-to-change-vsftpd-port-number-from-the-default-port-numbers-20-and-21/
