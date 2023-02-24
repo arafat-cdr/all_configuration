@@ -29,7 +29,7 @@ The instructions should be applicable to other Linux Ubuntu versions.
 bkup: sudo mv /etc/vsftpd.conf /etc/vsftpd.conf.bkup
 - sudo nano /etc/vsftpd.conf
 
-
+```bash
 listen=NO
 listen_port=2020
 ftp_data_port=2121
@@ -62,7 +62,7 @@ xferlog_enable=YES
 log_ftp_protocol=YES
 xferlog_file=/var/log/ftp/xferlog
 
-
+```
 ## Now:
 sudo chown root /etc/vsftpd/vsftpd.conf
 
