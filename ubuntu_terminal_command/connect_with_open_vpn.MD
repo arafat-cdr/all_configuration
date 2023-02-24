@@ -1,0 +1,1 @@
+sudo openvpn --config file starting_point_arafatCdr.ovpn
