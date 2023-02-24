@@ -93,13 +93,13 @@ ftp_data_port=B
 Here,
 A – listening port.
 B – data originate port.
-```bash
+```
 
 # /etc/vsftp/vsftpd.conf
 ```bash
 listen_port=2020
 ftp_data_port=2121
-```bash
+```
 
 # Now restart the vsftpd service
 ```bash
