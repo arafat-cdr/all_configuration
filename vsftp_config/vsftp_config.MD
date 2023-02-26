@@ -15,6 +15,12 @@ The instructions should be applicable to other Linux Ubuntu versions.
 - sudo ufw enable
 - sudo ufw status
 
+## Delete a Firewall rule
+- sudo ufw status numbered
+- sudo ufw delete 3
+- sudo ufw status numbered
+
+
 ## Create FTP User:
 - sudo adduser ftpuser
 - sudo mkdir /home/ftpuser/ftp
@@ -72,7 +78,7 @@ sudo /sbin/service vsftpd restart
 
 ```bash
 Checking Ftp Connections:
-Lcoal test
+Local test
 ftp ftpuser:password@localhost
 remote test
 ftp ftpuser:password@x.x.x.x
@@ -105,6 +111,7 @@ ftp_data_port=2121
 ```bash
 sudo /sbin/service vsftpd restart
 ```
+
 
 # original post url
 https://www.thegeekdiary.com/centos-rhel-how-to-change-vsftpd-port-number-from-the-default-port-numbers-20-and-21/
