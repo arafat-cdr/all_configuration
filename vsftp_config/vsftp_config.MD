@@ -37,8 +37,6 @@ bkup: sudo mv /etc/vsftpd.conf /etc/vsftpd.conf.bkup
 
 ```bash
 listen=NO
-listen_port=2020
-ftp_data_port=2121
 listen_ipv6=YES
 anonymous_enable=NO
 local_enable=YES
@@ -47,7 +45,7 @@ local_umask=022
 dirmessage_enable=YES
 use_localtime=YES
 xferlog_enable=YES
-connect_from_port_20=NO
+connect_from_port_20=YES
 chroot_local_user=YES
 secure_chroot_dir=/var/run/vsftpd/empty
 pam_service_name=vsftpd
