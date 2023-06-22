@@ -176,8 +176,8 @@ sayalipass
 
 Next, create the actual database file like this (may require the db_util package to be installed first):
 
-# db_load -T -t hash -f vusers.txt vsftpd-virtual-user.db
-# chmod 600 vsftpd-virtual-user.db # make it not global readable
+# sudo db_load -T -t hash -f vusers.txt vsftpd-virtual-user.db
+# sudo chmod 600 vsftpd-virtual-user.db # make it not global readable
 # rm vusers.txt
 
 Configure VSFTPD for virtual user
@@ -252,8 +252,11 @@ sudo nano /etc/vsftpd/vusers.txt
 sudo db_load -T -t hash -f /etc/vsftpd/vusers.txt /etc/vsftpd/vsftpd-virtual-user.db
 sudo chmod 600 /etc/vsftpd/vsftpd-virtual-user.db
 
-echo "jarif" | sudo tee -a /etc/vsftpd/vusers.txt; echo "jarifpass" | sudo tee -a /etc/vsftpd/vusers.txt
+########################################################################################################
+echo "" | sudo tee -a /etc/vsftpd/vusers.txt; echo "jarifpass" | sudo tee -a /etc/vsftpd/vusers.txt
+
 sudo db_load -T -t hash -f /etc/vsftpd/vusers.txt /etc/vsftpd/vsftpd-virtual-user.db
+
 sudo chmod 600 /etc/vsftpd/vsftpd-virtual-user.db
 
 sudo mkdir -p /home/vftp/jarif
