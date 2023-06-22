@@ -26,13 +26,13 @@
 
  ### has Below Folder:
 
- ** public folder
- ** site folder (all env, controller, config all laravel files lives here)
- ** index.php
- ** assets
- ** vendor
- ** uploads
- ** .htaccess
+ ** public folder  
+ ** site folder (all env, controller, config all laravel files lives here)  
+ ** index.php  
+ ** assets  
+ ** vendor  
+ ** uploads  
+ ** .htaccess  
 
 
  *** Call this: http:mydomain/public/symlink.php
